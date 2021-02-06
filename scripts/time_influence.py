@@ -1,6 +1,7 @@
 import pandas as pd
 
 raw_data_path = '../raw_data/'
+result_path = '../results/'
 
 def readInfluenceData(raw_data_path):
 	print('in read_influence_data()')
@@ -33,6 +34,6 @@ def getMeanActiveStartByInfluencer(influence_data, out_file):
 if __name__ == "__main__":
 	influence_data = readInfluenceData(raw_data_path)
 	#influencers = getInfluencerId(influence_data)
-	getMeanActiveStartByInfluencer(influence_data, '../mean_active_start_by_influencer.csv')
+	getMeanActiveStartByInfluencer(influence_data, result_path+'mean_active_start_by_influencer.csv')
 	
 	
